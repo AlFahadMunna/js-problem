@@ -11,13 +11,35 @@
 
 //? get object length
 
-let obj = {
-  mane: "fahad",
-  age: 28,
-};
+// let obj = {
+//   mane: "fahad",
+//   age: 28,
+// };
 
-let getObjectLength = (object) => {
-  return Object.keys(object).length;
-};
-let length = getObjectLength(obj);
-console.log(length);
+// let getObjectLength = (object) => {
+//   return Object.keys(object).length;
+// };
+// let length = getObjectLength(obj);
+// console.log(length);
+
+//? In an array of object filter out those objects which have gender's value male
+
+let arr = [
+  {
+    name: "munna",
+    gender: "male",
+  },
+  {
+    name: "munni",
+    gender: "female",
+  },
+  {
+    name: "fahad",
+    gender: "male",
+  },
+];
+
+let result = arr.filter((obj) => {
+  return obj.gender == "male";
+});
+console.log(result);
